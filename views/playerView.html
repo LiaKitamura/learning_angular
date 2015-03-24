@@ -1,0 +1,7 @@
+<div class="row list-group-item" ng-model="player">
+  <div class="col-sm-2"><button class="stopButton btn btn-default" ng-click="stop();"><div class="glyphicon glyphicon-stop"></div></button></div>
+  <div class="player col-sm-10">
+    <div class="title">{{ title }}</div>
+    <input type="range" id="seek" value="{{ secondsProgress }}" max="{{ duration }}" ng-model="secondsProgress" ng-init="secondsProgress=0" />
+  </div>
+</div>

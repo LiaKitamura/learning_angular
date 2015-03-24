@@ -1,0 +1,15 @@
+<div class="nprLink row" ng-click="player.play(ngModel)">
+  <span class="name col-lg-8">
+    <button class="col-sm-2 col-lg-2 playButton btn btn-default"><div class="glyphicon glyphicon-play"></div></button>
+    <div class="col-sm-10 col-lg-10">
+      <div class="row">
+        <span class="col-lg-12">{{ ngModel.title.$text }}</span>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <a href="{{ ngModel.link[0].$text }}">Link</a>
+        </div>
+      </div>
+    </div>
+  </span>
+</div>
